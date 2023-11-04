@@ -20,7 +20,7 @@
 .input-section{
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-left: 60px;
   margin-right: 60px;
   
@@ -64,4 +64,11 @@ button:hover {
 button:active {
   transform: translateY(4px);
   background-color:#0b1374 
+}
+
+p {
+  margin-left: 60px;
+  margin-right: 60px;
+
+
 }

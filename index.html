@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Kalkulator BMI</title>
+  
+  <script type=text/javascript src="scriptBMI.js"></script>
 </head>
 <body>
   <header id="header-bar">
@@ -14,16 +16,33 @@
       <a href="">Download App</a>
       <a href="">Contact Us</a>
     </nav>
-
   </header>
+
+  <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI</p>
+
   <section class="input-section">
     <label>Berat Badan</label>
     <input type="number" id="weight-input" placeholder="0">
+  </section>
+
+  <section class="input-section">
+    <label>Usia</label>
+    <input type="number" id="age-input" placeholder="0">
+  </section>
+
+  <section class="input-section">
+
+    <label>Tinggi Badan</label>
+    <input type="number" id="height-input" placeholder="0">
     <section class="button-section">
-      <button>Hitung BMI</button>
+      <button onclick="bmicalculate()" id="btn1">Hitung BMI</button>
       <button>Reset</button>
+    <input type="number" id="result" placeholder="Your BMI">
     </section>
 
   </section>
+
+  
+
 </body>
 </html>
