@@ -5,43 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Kalkulator BMI</title>
+  <title>BMI Calculator</title>
   
   <script type=text/javascript src="scriptBMI.js"></script>
 </head>
 <body>
+
   <header id="header-bar">
-    <h2 id="logo">BMI Calc</h2>
-    <nav class="navigation-bar">
-      <a href="">Download App</a>
-      <a href="">Contact Us</a>
-    </nav>
+    <h2 id="logo">BMI Calculator
+    </h2>
   </header>
 
-  <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat.Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI</p>
+  <nav class="navigation-bar">
+    <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Download App</a></li>
+    <li><a href="">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <p>With this calculator, you can find out your Body Mass Index (BMI) and discover the right ways to adjust to a healthier lifestyle. Try it out!
+  </p>
 
   <section class="input-section">
-    <label>Berat Badan</label>
+    <label>Body Weight</label>
     <input type="number" id="weight-input" placeholder="0">
   </section>
 
   <section class="input-section">
-    <label>Usia</label>
+    <label>Age</label>
     <input type="number" id="age-input" placeholder="0">
   </section>
 
   <section class="input-section">
 
-    <label>Tinggi Badan</label>
+    <label>Body Height</label>
     <input type="number" id="height-input" placeholder="0">
     <section class="button-section">
-      <button onclick="bmicalculate()" id="btn1">Hitung BMI</button>
-      <button>Reset</button>
+      <button onclick="bmicalculate(); classify()" id="btn1">Calculate BMI</button>
+      <button onclick="clearinput()">Reset</button>
     <input type="number" id="result" placeholder="Your BMI">
     </section>
 
   </section>
 
+  <p id="YourClass"><strong></strong></p>
   
 
 </body>

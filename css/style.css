@@ -5,16 +5,55 @@
 
 #logo {
   margin-top: 0px;
-  color: #2B3499;
+  color: #1b8050;
+  font-family: Helvetica, sans-serif;
+}
+
+body {background-color: #ffffff;}
+
+#YourClass {
+  font-style: oblique;
 }
 
 .navigation-bar {
-  display: flex;
-  gap: 15px;
+  margin-left: none;
+  overflow: hidden;
+  padding-top:none;
+  background-color: #ebb475;
 }
 
-.navigation-bar>a{
+.navigation-bar a{
+  color: #16704b;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
+  font-size: 15px;
+}
+
+.navigation-bar a:hover {
+  overflow: hidden;
+  background-color: #f89e30;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 15px;
+  background-color: #f7e4cd;
+}
+
+a {
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color:#000;
+}
+
+li {
+  display: inline;
+  color: #000;
+  padding: 8px 16px;
 }
 
 .input-section{
@@ -22,11 +61,12 @@
   flex-direction: column;
   margin-top: 10px;
   margin-left: 60px;
-  margin-right: 60px;
+  margin-right: 1000px;
   
 }
 
 label {
+  font-family: Helvetica, sans-serif;
   margin-bottom: 4px;
   font-size: medium;
   color: #FF6C22;
@@ -37,6 +77,7 @@ input {
   border: solid #FF9209;
   padding: 10px;
   border-radius: 8px;
+  background-color: #f7e4cd;
 }
 
 input:focus {
@@ -48,7 +89,7 @@ input:focus {
 }
 
 button {
-  background-color: #676fc9;
+  background-color: #12bd6d;
   color:aliceblue;
   border-radius: 8px;
   padding: 6px 10px;
@@ -58,17 +99,18 @@ button {
 }
 
 button:hover {
-  background-color:#1826c9 
+  background-color:#239e65; 
 }
 
 button:active {
   transform: translateY(4px);
-  background-color:#0b1374 
+  background-color:#176641; 
 }
 
 p {
+  font-family: Helvetica, sans-serif;
+  color:#16704b;
+  font-size:medium;
   margin-left: 60px;
-  margin-right: 60px;
-
-
+  margin-right:1000px;
 }
