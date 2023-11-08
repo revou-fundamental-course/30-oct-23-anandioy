@@ -12,8 +12,8 @@
 <body>
 
   <header id="header-bar">
-    <h2 id="logo">BMI Calculator
-    </h2>
+    <h1 id="logo">BMI Calculator
+    </h1>
   </header>
 
   <nav class="navigation-bar">
@@ -29,7 +29,7 @@
 
   <section class="input-section">
     <label>Body Weight</label>
-    <input type="number" id="weight-input" placeholder="0">
+    <input type="number" id="weight-input" placeholder="in Kilograms">
   </section>
 
   <section class="input-section">
@@ -40,16 +40,24 @@
   <section class="input-section">
 
     <label>Body Height</label>
-    <input type="number" id="height-input" placeholder="0">
+    <input type="number" id="height-input" placeholder="in Centimeters">
     <section class="button-section">
-      <button onclick="bmicalculate(); classify()" id="btn1">Calculate BMI</button>
+      <button onclick="bmicalculate(); classify(); showImage()" id="btn1">Calculate BMI</button>
       <button onclick="clearinput()">Reset</button>
     <input type="number" id="result" placeholder="Your BMI">
     </section>
 
   </section>
 
-  <p id="YourClass"><strong></strong></p>
+  <p id="YourClass">
+  </p>
+
+  <div class="images">
+  <img id="too-thin" style="display: none;" src="https://as2.ftcdn.net/v2/jpg/00/33/68/85/1000_F_33688548_jes2JEq0a9mUSXAQe4W44mZonE3GWlw6.jpg" width="150" height="200" >
+  <img id="normal" style="display: none;" src="https://media.istockphoto.com/id/1299360145/id/foto/fit-man-berdiri-di-luar-ruangan-di-kota.jpg?s=612x612&w=0&k=20&c=s_lEmGdZcnqhZHYrgh95TrqdC1hqT0yAgFTRSHy8LP4=" width="250" height="200">
+  <img id="overweight" style="display: none;" src="https://img.freepik.com/premium-photo/body-part-asian-fat-man-with-big-belly_38480-18.jpg" width="250" height="200">
+  <img id="obese" style="display: none;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZKrlrcRkiiNxtOzjrnpeDVBPD9l2zK4YJjYuuY_7MH_1DXzdCpVy1mnu2o2XcjtyQNic&usqp=CAU" width="200" height="200">
+</div>
   
 
 </body>
